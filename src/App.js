@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Gree from "./components/greeting";
+import Hello from "./components/hello";
+import UsestateComponent from "./components/UsestateComponent";
 
-function App() {
+export default function App() {
+
+  const name2 = "KR";
+  const place = "palakkad";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 style={{ color: "red" }}>react js</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur aovident minus soluta est dig vident minus soluta est d
+        
+      </p>
+      <Gree lastName={name2} place={place} />
+      <p>
+        Lorem ipsum dolor sit amet consectetuventore provident minus ris
+        inventore provilibe
+      </p>
+      <Hello />
+      <UsestateComponent />
     </div>
   );
 }
-
-export default App;
